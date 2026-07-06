@@ -23,6 +23,28 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width;
+                width:auto;
+            }
+            .card-title{
+                font-family: "Geist Pixel", sans-serif;
+            }
+            .card details{
+                font-family: "Gelasio", serif;
+                line-height: 15px;
+            }
+            img{
+               width:250px;
+               height: 250px;
+               border-radius:100px;
+               border-bottom-right-radius: 50%;
+               border-top-right-radius: 50%;
+            }
+            .card{
+               border: 1px solid rgba(63, 0, 172, 0.436);
+               padding: 15px;px;
+               margin: 15px;
+               width: 250px;
+               border-radius: 8px;
+               background-color: hsl(180, 7%, 68%);
             }
             
