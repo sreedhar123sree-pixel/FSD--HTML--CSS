@@ -47,4 +47,133 @@
                border-radius: 8px;
                background-color: hsl(180, 7%, 68%);
             }
+           
+            .parent{
+               width: 500px;
+               height: 500px;
+               background-color: rgb(147, 139, 139);
+               position: relative;
+            }
+            
+             /* .child-1{
+               width: 100px;
+               height:100px;
+               background-color: brown;
+               position:absolute;
+               top: 50px;
+               left: 50px;
+            } */
+             .child-1{
+               width: 100px;
+               height:100px;
+               background-color: brown;
+               position:absolute;
+               z-index:1;
+               right: 0;
+            
+               
+            }
+             /* .child-2{
+               width: 100px;
+               height:100px;
+               background-color: rgb(87, 5, 228);
+               position:absolute;
+               top: 50px;
+               
+            } */
+             .child-2{
+               width: 100px;
+               height:100px;
+               background-color: rgb(87, 5, 228);
+               position:absolute;
+               z-index:2 ;
+               bottom: 0;
+           }
+           
+             /* <!--flexbox--> */
+
+           /* .card-1{
+            width:200px;
+            height: 100px;
+            background-color: rgb(27, 15, 245);
+
+           }
+
+            .card-2{
+            width:200px;
+            height: 100px;
+            background-color: rgb(8, 1, 14);
+
+           }
+
+            .card-3{
+            width:200px;
+            height: 100px;
+            background-color: rgb(226, 43, 43);
+
+           } */
+
+           .home{
+            display: flex;
+            /* flex-direction: column; */
+            background-color: rgb(162, 163, 164);
+            /* justify-content: center; */
+            /* justify-content: right; */
+            /* justify-content: left; */
+            /* gap: 50px; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+            height: 200px;
+            align-items: center;
+           }
+
+            .card-1{
+            width:200px;
+            height: 100px;
+            background-color: rgb(27, 15, 245);
+
+           }
+
+            .card-2{
+            width:200px;
+            height: 100px;
+            background-color: rgb(8, 1, 14);
+
+           }
+
+            .card-3{
+            width:200px;
+            height: 100px;
+            background-color: rgb(226, 43, 43);
+
+           }
+
+           /* <!--nav.menu--> */
+
+         header{
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+            nav{
+               display:flex;
+               a{
+                  text-decoration: none;
+                  color: rgb(29, 18, 2);
+                  padding: 10px 20px;
+                  display: block;
+                  transition:0.5s ease-in-out;
+                  &:hover{
+                     background: rgb(142, 136, 227);
+                     color: #0b0b0b;
+                     border-radius: 15px; 
+                  }
+                
+               }
+            }
+         }
+            
+            
+            
+            
+            
             
