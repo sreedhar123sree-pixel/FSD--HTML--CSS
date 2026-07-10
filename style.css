@@ -171,7 +171,49 @@
                }
             }
          }
-            
+
+         /* <!--css.grid--> */
+         .container{
+            display:grid;
+            /* grid-template-columns:200px 1fr 1fr; */
+             grid-template-columns:repeat(3,1fr);
+             gap:10px;
+          .card-item{
+          border:10px solid #ff5733;
+          }
+         }
+
+         /* <!--media query--> */
+         .media-query{
+          background-color: #5015e4; 
+          width:100%;
+          height:200px; 
+         }
+         .bg-orange{
+           background-color: #f1340a; 
+         }
+
+      @media (max-width:768px){
+         .media-query{
+            background-color: aqua;
+         }
+      }
+
+       @media (max-width:480px){
+         .media-query{
+            background-color: rgb(156, 173, 8);
+         }
+      }
+
+       /* @media (min-width:460px){
+         .media-query{
+            background-color: rgb(156, 173, 8);
+         }
+      } */
+
+
+
+          
             
             
             
