@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Restaurant Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f4efe8;
+      color: #2a2a2a;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .menu-header {
+      background: #2e2e2e;
+      color: #f7f2e9;
+    }
+    .nav-pills .nav-link {
+      border-radius: 50px;
+      font-weight: 600;
+      color: #2a2a2a;
+    }
+    .nav-pills .nav-link.active {
+      background: #2e2e2e;
+      color: #fff;
+    }
+    .menu-card {
+      background: rgba(255,255,255,.96);
+      border: none;
+      box-shadow: 0 18px 35px rgba(0,0,0,.08);
+    }
+    .menu-item {
+      border-bottom: 1px solid #e5dfd5;
+      padding: 1rem 0;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    .item-price {
+      font-weight: 700;
+      color: #2a2a2a;
+      white-space: nowrap;
+    }
+    .item-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: .2rem;
+    }
+    .item-desc {
+      color: #5a5650;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="p-4 p-md-5 menu-header rounded-4 shadow-sm">
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <h1 class="display-6 mb-2">The Grand Oak Dining</h1>
+                <p class="lead mb-0">Elegant hotel restaurant menu for a refined dining experience. Discover starters, main courses and desserts crafted to delight.</p>
+              </div>
+              <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <span class="badge bg-light text-dark py-2 px-3 fs-6">Seasonal Menu</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <ul class="nav nav-pills justify-content-center mb-4" id="menuTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active px-4 py-2" id="starters-tab" data-bs-toggle="pill" data-bs-target="#starters" type="button" role="tab">Starters</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link px-4 py-2" id="main-tab" data-bs-toggle="pill" data-bs-target="#main-course" type="button" role="tab">Main Course</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link px-4 py-2" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab">Desserts</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="menuTabsContent">
+              <div class="tab-pane fade show active" id="starters" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-12">
+                    <div class="card menu-card p-3">
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Truffle Arancini">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Truffle Arancini</h2>
+                              <p class="item-desc mb-0">Crispy risotto balls with melted fontina, black truffle and parmesan cream.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$14</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Heritage Tomato Salad">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Heritage Tomato Salad</h2>
+                              <p class="item-desc mb-0">Vine-ripened tomatoes, burrata, basil oil and aged balsamic.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$12</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Seared Scallops">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Seared Scallops</h2>
+                              <p class="item-desc mb-0">Pan-seared scallops with pea purée, lemon beurre blanc and microgreens.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$18</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="main-course" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-12">
+                    <div class="card menu-card p-3">
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Filet Mignon">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Filet Mignon</h2>
+                              <p class="item-desc mb-0">Tender beef filet with truffle mash, roasted asparagus and red wine jus.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$36</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Pan-Seared Salmon">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Pan-Seared Salmon</h2>
+                              <p class="item-desc mb-0">Atlantic salmon fillet with citrus gremolata and roasted fennel.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$32</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Wild Mushroom Risotto">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Wild Mushroom Risotto</h2>
+                              <p class="item-desc mb-0">Creamy arborio rice with porcini, parmesan and a drizzle of white truffle oil.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$28</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="desserts" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-12">
+                    <div class="card menu-card p-3">
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Chocolate Fondant">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Chocolate Fondant</h2>
+                              <p class="item-desc mb-0">Warm molten chocolate cake with salted caramel and vanilla bean ice cream.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$14</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Lemon Pavlova">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Lemon Pavlova</h2>
+                              <p class="item-desc mb-0">Crisp meringue, lemon curd and fresh berries finished with whipped cream.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$13</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 align-items-center menu-item">
+                        <div class="col-auto">
+                          <div class="bg-secondary rounded-3 overflow-hidden" style="width:100px; height:100px;">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Creme Brulee">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-start flex-column flex-sm-row">
+                            <div>
+                              <h2 class="item-title mb-1">Crème Brûlée</h2>
+                              <p class="item-desc mb-0">Silky vanilla custard with caramelized sugar and a hint of orange zest.</p>
+                            </div>
+                            <div class="item-price mt-2 mt-sm-0">$12</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
